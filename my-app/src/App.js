@@ -10,6 +10,8 @@ import State from './State'
 import HideText from './HideText';
 import Form from './Form';
 import ChangeColor from './ChangeColor'
+import Example from './Timer';
+import Apps from './Timer';
 
 function App() {
   const skills = ['JavaScript', ' HTML', ' CSS', ' FlexBox', ' React'];
@@ -24,10 +26,11 @@ function App() {
        <Skills skills = {skills}></Skills>
        <CityInfo data = {{city: 'Minsk', country: 'Belarus', postcode: 220026}}></CityInfo>
        <ShowStudyMonth showInfo = {showInfo}></ShowStudyMonth> */}
-       <State></State>
-       <HideText></HideText>
-       <Form></Form>
-       <ChangeColor></ChangeColor>
+       {/* <State/>
+       <HideText/>
+       <Form/>
+       <ChangeColor/> */}
+       <Apps/>
       </header>
     </div>
   );
