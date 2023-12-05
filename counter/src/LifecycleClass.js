@@ -24,7 +24,7 @@ class LifecycleComponent extends React.Component {
         console.log(this.state.count);
     }
     componentWillUnmount() {
-        console.log(this.state);
+        console.log('Component will be deleted');
     }
     render () {
         return <div>
