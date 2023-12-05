@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import ParentComponent from './ParentComp';
 import LifecycleComponent from './LifecycleClass'
 
 function App() {

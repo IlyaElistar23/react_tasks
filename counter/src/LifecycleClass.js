@@ -16,7 +16,6 @@ class LifecycleComponent extends React.Component {
 
     componentDidMount () {
         this.serverRequest()
-        this.setState(this.state.count + 1)
     }
     shouldComponentUpdate (nextProps, nextState) {
         return nextProps.state.count !== this.state.count && nextProps.state.count % 2 === 0;
@@ -30,7 +29,7 @@ class LifecycleComponent extends React.Component {
     render () {
         return <div>
             Значение счётчика: {this.state.count}
-            <button onClick={this.componentDidMount}>Увеличить</button>
+            <button onClick={() => this.setState((state) => ({count: state.count + 1}))}>Увеличить</button>
             </div>
     }
 }
