@@ -2,12 +2,11 @@ import axios from "axios";
 import React from "react";
 
 class LifecycleComponent extends React.Component {
-    constructor (props) {
-        super (props)
-        this.state = {
+
+        state = {
             count: 0
         }
-    }
+
 
     async serverRequest () {
         const data = await axios.get('https://todo-redev.herokuapp.com/api/todos')

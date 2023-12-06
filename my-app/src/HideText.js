@@ -3,7 +3,7 @@ import React, {useState} from "react";
 const HideText = () => {
     const [text, setHideText] = useState(false)
     const hideText = () => {
-        setHideText(!text)
+        setHideText()
     }
     return <div>
                 <button onClick={hideText}>Hide text</button>
