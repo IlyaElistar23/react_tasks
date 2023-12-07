@@ -26,7 +26,7 @@ class LifecycleComponent extends React.Component {
         console.log('Component has mounted');
     }
     shouldComponentUpdate (nextProps, nextState) {
-        return nextProps.count !== this.state.count && this.state.count % 2 !== 0;
+        return nextState.count % 2 === 0;
     }
     componentDidUpdate () {
         console.log('Component has updated');
