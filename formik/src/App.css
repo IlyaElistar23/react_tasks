@@ -56,11 +56,11 @@ input[type="submit"] {
   text-transform: uppercase;
   border: none;
   margin-top: 40px;
-  margin-left: 60px;
+  margin-left: 110px;
   padding: 20px;
   font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
 button[type="submit"]:hover,
